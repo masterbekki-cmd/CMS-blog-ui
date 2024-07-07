@@ -5,6 +5,11 @@ import { Textarea } from '@/components/ui/textarea'
 import { Dot, Home, Mail, Phone, Send } from 'lucide-react'
 import Link from 'next/link'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Bog`lanish | Dasturlash haqida blog',
+}
 function ContactPage() {
 	return (
 		<div className='max-w-6xl mx-auto'>

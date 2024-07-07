@@ -2,7 +2,11 @@ import CategoryCard from '@/components/cards/category'
 import { getCategory } from '@/service/category.service'
 import { Dot, Home } from 'lucide-react'
 import Link from 'next/link'
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+	title: 'Kategoriyalar | Dasturlash haqida blog',
+}
 async function Page() {
 	const categories = await getCategory()
 	return (

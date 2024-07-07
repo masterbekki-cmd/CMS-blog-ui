@@ -3,6 +3,11 @@ import { getBlogs } from '@/service/blog.service'
 import { Dot, Home } from 'lucide-react'
 import Link from 'next/link'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Barcha Bloglar | Dasturlash haqida blog',
+}
 async function BlogsPage() {
 	const blogs = await getBlogs()
 	return (

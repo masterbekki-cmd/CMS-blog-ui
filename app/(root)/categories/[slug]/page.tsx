@@ -1,7 +1,24 @@
 import BlogCard from '@/components/cards/blog'
 import { getCategoryBlogs } from '@/service/category.service'
+export async function generateMetadata({
+	params,
+}: {
+	params: { slug: string }
+}) {
+	const category = await getCategoryBlogs(params.slug)
 
-async function page({params}:{params:{slug:string}}) {
+	return {
+		title: category.name,
+		description:
+			'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blogda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
+		openGraph: {
+			image:
+				'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsammi.ac%2F&psig=AOvVaw14TY_sXprr2SLa-xPNiHEq&ust=1720464331293000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMD_i6DLlYcDFQAAAAAdAAAAABAE',
+		},
+	}
+}
+
+async function page({ params }: { params: { slug: string } }) {
 	const category = await getCategoryBlogs(params.slug)
 
 	return (

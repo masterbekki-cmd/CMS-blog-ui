@@ -34,4 +34,5 @@ export interface IDetailedBlog {
 	slug: string
 	tag: ICategoryAndTags
 	title: string
+	description:string
 }

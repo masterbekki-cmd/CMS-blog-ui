@@ -18,6 +18,18 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 
+export async function generateMetadata({ params }: { params: { slug: string } }){
+	const blog = await getDetailedBlog(params.slug)
+	return{
+		title:blog.title,
+		description:blog.description,
+		openGraph:{
+			image:blog.image.url
+		}
+	}
+}
+
+
 async function SlugPage({ params }: { params: { slug: string } }) {
 	const blog = await getDetailedBlog(params.slug)
 

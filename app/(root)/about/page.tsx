@@ -1,9 +1,13 @@
 import AuthorCard from '@/components/cards/author'
 import { authors } from '@/constants'
 import { Dot, Home } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+	title:"Biz haqimizda | Dasturlash haqida blog"
+}
 function AboutPage() {
 	return (
 		<div className='max-w-6xl mx-auto'>
