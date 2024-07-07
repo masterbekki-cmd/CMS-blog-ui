@@ -9,7 +9,7 @@ function AboutPage() {
 		<div className='max-w-6xl mx-auto'>
 			<div className='relative min-h-[40vh] flex items-center justify-center flex-col'>
 				<h2 className='text-center text-4xl section-title font-creteRound'>
-					<span>About</span>
+					<span>Biz haqimizda</span>
 				</h2>
 
 				<div className='flex gap-1 items-center mt-4'>
@@ -25,10 +25,11 @@ function AboutPage() {
 				</div>
 			</div>
 			<h1 className='text-center text-4xl font-creteRound'>
-				We are the Sammi, <br /> Team of content writers and designers.
+				Biz <span className='text-blue-500 text-5xl ml-2'>Bekki Academy</span>,{' '}
+				<br /> Contentmaker va dizaynerlar jamoasi
 			</h1>
 
-			<div className='grid grid-cols-4 gap-4 min-h-96 mt-6'>
+			<div className='grid grid-cols-4 gap-4 min-h-96 mt-12'>
 				<div className='col-span-2 max-md:col-span-4 relative h-80'>
 					<Image
 						src={'/about/01.jpg'}
@@ -71,7 +72,7 @@ function AboutPage() {
 			</div>
 
 			<h2 className='text-center text-4xl section-title font-creteRound my-12'>
-				<span>Our writers</span>
+				<span>Bizning Mualliflar</span>
 			</h2>
 
 			<div className='flex justify-around max-md:flex-col max-md:space-y-4 max-md:items-center'>

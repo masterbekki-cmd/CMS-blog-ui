@@ -4,14 +4,34 @@ export interface ChildProps {
 
 export interface IBlog {
 	title: string
-	description: string
-	author: string
-	date: string
-	image: string
-	tags: string[]
+	slug:string
+	description:string
+	content:{html:string}
+	image:{url:string}
+	author:IAuthor
+	category:ICategoryAndTags
+	tags:ICategoryAndTags
+	createdAt:string
 }
 
+export interface ICategoryAndTags{
+	name:string
+	slug:string
+	blogs?:IBlog[]
+}
 export interface IAuthor {
 	name: string
-	image: string
+	slug:string
+	image: {url:string}
+	bio:string
+}
+
+export interface IDetailedBlog {
+	author: IAuthor
+	content: { html: string }
+	image: { url: string }
+	createdAt: string
+	slug: string
+	tag: ICategoryAndTags
+	title: string
 }

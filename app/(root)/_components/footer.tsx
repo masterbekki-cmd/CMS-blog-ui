@@ -10,13 +10,13 @@ function Footer() {
 
 	return (
 		<footer className='flex-center py-24 flex-col container max-w-2xl space-y-12'>
-			<h1 className='text-5xl max-md:text-3xl font-creteRound text-center'>
-				Get latest posts delivered right to your inbox
+			<h1 className='text-4xl max-md:text-3xl font-creteRound text-center'>
+				Oxirgi bloglar to'g'ridan-to'g'ri email manzilingizga yuboramiz.
 			</h1>
 			<div className='grid max-md:grid-cols-1 grid-cols-3 md:gap-4 w-full'>
 				<Input
 					className='w-full col-span-2'
-					placeholder='Your email address'
+					placeholder='Sizning email manzilingiz'
 					onFocus={() => setActive(true)}
 					onBlur={() => setActive(false)}
 				/>
@@ -26,7 +26,7 @@ function Footer() {
 					className='max-md:mt-2'
 				>
 					<User2 className='w-4 h-4 me-2' />
-					<span>Join today</span>
+					<span>Tasdiqlash</span>
 				</Button>
 			</div>
 		</footer>

@@ -7,11 +7,10 @@ import {
 } from 'lucide-react'
 
 export const navLinks = [
-	{ name: 'Home', route: '/', icon: Home },
-	{ name: 'About', route: '/about', icon: ListCollapse },
-	{ name: 'Blogs', route: '/blogs', icon: FileCode2 },
-	{ name: 'Archive', route: '/blogs/archive', icon: FolderArchive },
-	{ name: 'Contact', route: '/contact', icon: Contact2 },
+	{ name: 'Bosh sahifa', route: '/', icon: Home },
+	{ name: 'Haqimizda', route: '/about', icon: ListCollapse },
+	{ name: 'Bloglar', route: '/blogs', icon: FileCode2 },
+	{ name: "Bog'lanish", route: '/contact', icon: Contact2 },
 ]
 
 export const popularCategories = [
@@ -30,13 +29,13 @@ export const popularTags = [
 
 export const blogs = [
 	{
-		title: 'The AGI hype train is running out of steam',
+		title: 'TypeScript: yangi boshlanuvchilar uchun to`liq qo`llanma',
 		description:
-			'While futurists and fundraisers used to make bullish predictions about artificial general intelligence, they’ve become quieter lately. Peter Thiel.',
+			'TypeScript-bu Microsoft tomonidan ishlab chiqilgan zamonaviy dasturlash tili bo`lib, u...',
 		author: 'Samar',
-		tags: ['Machine learning'],
-		date: 'Dec 5, 2021',
-		image: '/blogs/01.jpg',
+		tags: ['Front-End'],
+		date: '5 Apr, 2024',
+		image: '/blogs/01.png',
 	},
 	{
 		title: 'Creating an object that travels at 1% the speed of light?',
@@ -71,15 +70,15 @@ export const blogs = [
 export const authors = [
 	{
 		name: 'Chris Impey',
-		image: '/author/chris-impey.jpg',
+		image: '/author/author.png',
 	},
 	{
 		name: 'Thomas Macaulay',
-		image: '/author/thomas-macaulay.jpg',
+		image: '/author/author.png',
 	},
 	{
 		name: 'Emma Hazel',
-		image: '/author/emma-hazel.jpg',
+		image: '/author/author.png',
 	},
 ]
 
