@@ -70,15 +70,15 @@ export const blogs = [
 export const authors = [
 	{
 		name: 'Chris Impey',
-		image: '/author/author.png',
+		image: '/author/chris-impey.jpg',
 	},
 	{
 		name: 'Thomas Macaulay',
-		image: '/author/author.png',
+		image: '/author/thomas-macaulay.jpg',
 	},
 	{
 		name: 'Emma Hazel',
-		image: '/author/author.png',
+		image: '/author/emma-hazel.jpg',
 	},
 ]
 

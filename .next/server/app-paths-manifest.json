@@ -1,3 +1,7 @@
 {
-  "/(root)/(home)/page": "app/(root)/(home)/page.js"
+  "/(root)/(home)/page": "app/(root)/(home)/page.js",
+  "/(root)/blogs/[slug]/page": "app/(root)/blogs/[slug]/page.js",
+  "/(root)/contact/page": "app/(root)/contact/page.js",
+  "/(root)/categories/page": "app/(root)/categories/page.js",
+  "/(root)/categories/[slug]/page": "app/(root)/categories/[slug]/page.js"
 }

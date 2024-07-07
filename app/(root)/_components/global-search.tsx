@@ -1,7 +1,7 @@
 'use client'
 import SearchCard from '@/components/cards/search'
 import { Badge } from '@/components/ui/badge'
-import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
+import { Drawer, DrawerContent, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer'
 import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
 import { popularCategories, popularTags } from '@/constants'
@@ -39,8 +39,9 @@ function GlobalSearch() {
 					<Search className='w-4 h-4' />
 				</div>
 			</DrawerTrigger>
-			<DrawerContent>
-				<div className='container max-w-6xl mx-auto py-12'>
+			<DrawerContent aria-describedby={undefined}>
+				<div className='container max-w-6xl mx-auto pt-4 pb-12'>
+				<DrawerTitle className='text-center text-3xl mb-4'>Search</DrawerTitle>
 					<Input
 						className='bg-secondary'
 						placeholder='Type to search blog...'
@@ -67,8 +68,13 @@ function GlobalSearch() {
 									{item.name}
 								</Badge>
 							))}
+							<Link
+								href={'/tags'}
+								className='underline hover:text-blue-500 transition-colors'
+							>
+								See all category
+							</Link>
 						</div>
-						<Link href={"/tags"}>See all category</Link>
 					</div>
 
 					<div className='flex flex-col space-y-3 mt-4'>
@@ -79,8 +85,13 @@ function GlobalSearch() {
 									{item.name}
 								</Badge>
 							))}
+							<Link
+								href={'/tags'}
+								className='underline hover:text-blue-500 transition-colors'
+							>
+								See all tags
+							</Link>
 						</div>
-						<Link href={"/tags"}>See all tags</Link>
 					</div>
 				</div>
 			</DrawerContent>

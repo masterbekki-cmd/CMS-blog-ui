@@ -35,6 +35,8 @@ function AboutPage() {
 						src={'/about/01.jpg'}
 						alt='about'
 						fill
+						priority={true}
+						sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 						className='rounded-md object-cover'
 					/>
 				</div>
@@ -43,6 +45,7 @@ function AboutPage() {
 						src={'/about/00.jpg'}
 						alt='about'
 						fill
+						sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 						className='rounded-md object-cover'
 					/>
 				</div>
@@ -51,6 +54,7 @@ function AboutPage() {
 						src={'/about/02.jpg'}
 						alt='about'
 						fill
+						sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 						className='rounded-md object-cover'
 					/>
 				</div>
